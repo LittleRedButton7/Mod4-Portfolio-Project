@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+:root {
+  --primary-pink: #ff00bf;
+  --primary-turquoise: #00fffd;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+/*************NAVBAR***************/
+.navbar-brand{
+  position: relative;
+  left: -20rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  width: 30rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/*---------MENU LINKS--------*/
+nav a.nav-link{
+  font-size: 2.75rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  font-family: "Clicker Script";
+  margin: 0.525rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav{
+  position: relative;
+  align-content: right;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav > li > a {
+  color: var(--primary-pink) !important;
+  border-top: .1875rem solid var(--primary-dark);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: .1875rem solid var(--primary-turquoise);
+}
+
+.navbar-nav > li > a.hover, .navbar-nav > li > a:hover {
+  border-top: .1875rem solid var(--primary-turquoise);
 }
