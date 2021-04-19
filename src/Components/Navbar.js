@@ -1,5 +1,5 @@
 import React from "react"
-import myLogo from "../myLogo.png"
+import myLogo from "../MyLogo.png"
 // REACT FONT AWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
