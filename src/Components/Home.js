@@ -1,5 +1,7 @@
 import React from "react";
 import Typed from 'react-typed';
+import { Route, Link } from "react-router-dom"
+
 
 const Home = () => {
     return (
@@ -9,14 +11,16 @@ const Home = () => {
                 <Typed 
                     className="typed-text"
                     strings={["Full Stack Software Engineer", "Relationship Builder", "Creator", "Problem Solver"]}
-                    typeSpeed={60}
+                    typeSpeed={70}
                     backspeed={70}
-                    // loop
+                    loop
                 />
-                <a href="#" className="button-main-offering">Contact</a>
+                <Link to="/contact" className="button-main-offering">Contact</Link>                    
             </div>
         </div>
-    )
+    );
 }
 
+
 export default Home
+
