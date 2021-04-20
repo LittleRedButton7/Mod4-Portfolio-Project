@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from 'react-typed';
 
-const Header = () => {
+const Home = () => {
     return (
         <div className="header-wrapper">
             <div className="main-info">
@@ -11,7 +11,7 @@ const Header = () => {
                     strings={["Full Stack Software Engineer", "Relationship Builder", "Creator", "Problem Solver"]}
                     typeSpeed={60}
                     backspeed={70}
-                    loop
+                    // loop
                 />
                 <a href="#" className="button-main-offering">Contact</a>
             </div>
@@ -19,4 +19,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Home
