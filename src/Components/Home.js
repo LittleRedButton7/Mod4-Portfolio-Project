@@ -2,7 +2,8 @@ import React from "react";
 import Typed from 'react-typed';
 import { Route, Link } from "react-router-dom"
 
-const Header = () => {
+
+const Home = () => {
     return (
         <div className="header-wrapper">
             <div className="main-info">
@@ -14,10 +15,12 @@ const Header = () => {
                     backspeed={70}
                     loop
                 />
-                <Link to="/contact" className="button-main-offering">Contact</Link>
+                <Link to="/contact" className="button-main-offering">Contact</Link>                    
             </div>
         </div>
-    )
+    );
 }
 
-export default Header
+
+export default Home
+

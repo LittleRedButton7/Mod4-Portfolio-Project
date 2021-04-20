@@ -11,10 +11,12 @@ import Resume from "./PortfolioPages/Resume";
 import Contact from "./PortfolioPages/Contact";
 
 
+
 function App() {
   return (
     <div className="App">
       <Navbar />
+
       <Route exact path='/' component={Home} />
       <Route path='/portfolio' render={(routerProps) => <Portfolio {...routerProps} /> } />
       <Route path='/artwork' render={(routerProps) => <Artwork {...routerProps} /> } />
@@ -23,7 +25,7 @@ function App() {
       <Route path='/resume' render={(routerProps) => <Resume {...routerProps} /> } />
       <Route path='/contact' render={(routerProps) => <Contact {...routerProps} /> } />
     </div>
-    
+      
   );
 }
 
