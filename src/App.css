@@ -4,17 +4,30 @@
   --primary-pink: #ff00bf;
   --primary-turquoise: #00fffd;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-yellow: #ffff00; 
 }
 /*************NAVBAR***************/
+
+
 .navbar-brand{
   position: relative;
-  left: -20rem;
+  left: -18rem;
 }
 
 .logo{
   width: 30rem;
 }
 
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 5rem;
+    left: 0;
+  }
+  .logo{
+    width: 16rem;
+    height: 7rem;
+  }
+}
 
 /*---------MENU LINKS--------*/
 nav a.nav-link{
@@ -43,3 +56,80 @@ nav a.nav-link{
 .navbar-nav > li > a.hover, .navbar-nav > li > a:hover {
   border-top: .1875rem solid var(--primary-turquoise);
 }
+
+@media(max-width: 768px){
+  .navbar-nav > li > a{
+    font-size: 1.75rem !important; 
+  }
+}
+/*************HEADER***************/
+
+.header-wrapper{
+  position: relative;
+  background-image: url("./Components/Images/background-image1.jpeg");
+  background-color: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: -30rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Clicker Script";
+
+}
+
+.main-info h1 {
+  color: var(--primary-pink);
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  margin: 1rem;
+}
+
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 2rem !important;
+  }
+  .typed-text{
+    font-size: 1.75rem !important;
+  }
+}
+
+/*************TYPED TEXT***************/
+
+.typed-text{
+  color: var(--primary-pink);
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+}
+
+
+/*************HEADER MAIN OFFERING BUTTON***************/
+.button-main-offering{
+  border: 1px solid var(--primary-yellow);
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-turquoise);
+  background-color: rgb(148, 147, 147);
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.button-main-offering:hover{
+  color: var(--primary-yellow);
+  text-decoration: none;
+  background-color: darkgray;
+  transition: .2s ease-in-out;
+}
+
