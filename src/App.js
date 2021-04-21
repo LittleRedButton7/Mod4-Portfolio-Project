@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <Route exact path='/' component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path='/portfolio' render={(routerProps) => <Portfolio {...routerProps} /> } />
       <Route path='/artwork' render={(routerProps) => <Artwork {...routerProps} /> } />
       <Route path='/blogs' render={(routerProps) => <Blogs {...routerProps} /> } />
