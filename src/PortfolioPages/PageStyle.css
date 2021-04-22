@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+:root {
+    --primary-pink: #ff00bf;
+    --primary-turquoise: #00fffd;
+    --primary-dark: rgba(255, 255, 255, 0);
+    --primary-yellow: #ffff00; 
+    }
+
 body{
     background-color: lightgray;
 }
+
+.blog-wrapper{
+    align-content: center;
+    padding: 3rem;
+}
+
+.blog {
+    font-family: "Clicker Script";
+    text-align: center;
+    /* margin: 1rem;
+    height: 15rem;
+    width: auto; */
+    padding: 3rem;
+}
+
+.blog > h1 > a {
+    color: var(--primary-pink);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+}
+
+.blog > h1 > a:hover {
+    text-decoration: none;
+    color: rgb(158, 20, 147);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+}
+
+.blog > img {
+    width: 50rem;
+    height: auto;
+    padding-bottom: 2rem;.blog-wrapper{
+        align-content: center;
+        margin: 3rem;
+    }
+}
+
