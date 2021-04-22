@@ -120,7 +120,6 @@ nav a.nav-link{
 
 /*************HEADER MAIN OFFERING BUTTON***************/
 .button-main-offering{
-  left: 50%;
   font-family: "Clicker Script";
   border: 1px solid var(--primary-yellow);
   border-radius: 0;
