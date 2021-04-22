@@ -1,10 +1,11 @@
 import React from 'react'
 import "./PageStyle.css"
+import ProjectCards from "../Components/TechProjectCard"
 
 export default function Portfolio() {
     return (
-        <div>
-            <h1>Hi! This is my Portfolio page.</h1>
+        <div className="project-wrapper">
+            <ProjectCards />
         </div>
     )
 }

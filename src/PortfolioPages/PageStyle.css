@@ -8,10 +8,18 @@
     }
 
 body{
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-image: url("../Components/Images/sparkleBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    /* height: auto; */
 }
 
+/*********BLOG************/
 .blog-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-content: center;
     padding: 3rem;
 }
@@ -23,6 +31,17 @@ body{
     height: 15rem;
     width: auto; */
     padding: 3rem;
+    margin-top:2.5rem;
+    margin-bottom:2.5rem;
+    background-color: white;
+    border-radius: .625rem;
+    border: solid .3rem var(--primary-yellow);
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow:.625rem .625rem .3125rem rgb(148, 147, 147);
+}
+
+.blog:hover{
+    transform: scale(1.07);
 }
 
 .blog > h1 > a {
@@ -43,9 +62,88 @@ body{
 .blog > img {
     width: 50rem;
     height: auto;
-    padding-bottom: 2rem;.blog-wrapper{
+    padding-bottom: 2rem;
+}
+    
+.blog-wrapper{
         align-content: center;
         margin: 3rem;
-    }
 }
 
+/*********RESUME************/
+.resume-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resume-page{
+    /* padding: 3rem;
+    padding-right: 20rem;
+    padding-left: 20rem; */
+    margin-right: 20rem;
+    margin-left: 20rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: .625rem;
+    box-shadow: 0.625rem 0.625rem 0.3125rem rgb(117, 117, 117);
+}
+
+/********PORTFOLIO PAGE*/
+.project-info-wrapper{
+    /* margin-top: 10rem;
+    height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 3rem;
+}
+
+.project-card {
+    font-family: "Clicker Script";
+    text-align: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    border-radius: .625rem;
+    border: solid .3rem var(--primary-turquoise);
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow:.625rem .625rem .3125rem rgb(148, 147, 147);
+}
+
+.project-card:hover{
+    transform: scale(1.07);
+}
+
+.project-card > h1 {
+    color: var(--primary-pink);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+    
+}
+
+.project-card > h3 > a {
+    color: var(--primary-pink);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+}
+
+.project-card > h3 > a:hover {
+    text-decoration: none;
+    color: rgb(158, 20, 147);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+}
+
+.project-card > img {
+    width: 30rem;
+    height: auto;
+    padding-bottom: 2rem;
+}
+    

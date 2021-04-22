@@ -1,6 +1,6 @@
 import React from "react"
 import myLogo from "../MyLogo.png"
-import { Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 // REACT FONT AWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
