@@ -12,6 +12,7 @@ import Contact from "./PortfolioPages/Contact";
 import Footer from "./PortfolioPages/Footer";
 
 
+
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,7 @@ function App() {
       </div>
       <Footer />
     </div>
-    
+      
   );
 }
 
