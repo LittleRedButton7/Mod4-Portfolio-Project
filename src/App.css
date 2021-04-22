@@ -64,18 +64,22 @@ nav a.nav-link{
 }
 /*************HEADER***************/
 
-.header-wrapper{
+.home-page{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: column;
   position: relative;
   background-image: url("./Components/Images/background-image1.jpeg");
   background-color: cover;
   background-position: center;
-  height: 90vh;
+  height: auto;
 }
 
 .main-info{
   display: flex;
-  position: absolute;
-  top: -30rem;
+  /* position: absolute; */
+  top: -50rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -116,14 +120,16 @@ nav a.nav-link{
 
 /*************HEADER MAIN OFFERING BUTTON***************/
 .button-main-offering{
+  left: 50%;
+  font-family: "Clicker Script";
   border: 1px solid var(--primary-yellow);
   border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.625rem 0.75rem 1.5rem 0.75rem;
   color: var(--primary-turquoise);
   background-color: rgb(148, 147, 147);
-  margin: 2rem;
+  margin-bottom: 20rem;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 .button-main-offering:hover{
@@ -133,3 +139,126 @@ nav a.nav-link{
   transition: .2s ease-in-out;
 }
 
+
+/*************SLIDER CSS***************/
+.image-slider{
+  /* height: 40rem;
+  width: 100%; */
+  padding: 3rem;
+  position: relative;
+  bottom: 0;
+  /* background-color: darkkhaki; */
+}
+
+.image-slider > h1 {
+  color: var(--primary-pink);
+  font-family: "Clicker Script";
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  text-align: center;
+}
+.slider{
+  position: relative;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+  height: 32rem;
+  width: auto;
+  border-radius: .625rem;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+/*************PORTFOLIO SECTION***************/
+.portfolio-highlights > h1{
+  color: var(--primary-pink);
+  font-family: "Clicker Script";
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  text-align: center;
+}
+
+.portfolio-highlights > p{
+  color: var(--primary-pink);
+  font-family: "Clicker Script";
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  text-align: center;
+}
+/*************FOOTER***************/
+
+/* .App{
+  display: flex;
+  flex-direction: column;
+} */
+
+hr{
+  background-color: white;
+}
+
+.main-footer{
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(73, 73, 73);
+  padding-top: 1.5rem;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* .footer-container{
+  justify-content: center;
+} */
+
+.content-wrap{
+  flex:1;
+}
+
+.column{
+  padding-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.row{
+  justify-content: center;
+}
