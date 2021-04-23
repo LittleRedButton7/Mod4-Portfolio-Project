@@ -7,6 +7,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-pdf/renderer": "^2.0.6",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "cra-template": "1.1.2",
     "react": "^17.0.2",
@@ -15,7 +16,8 @@
     "react-pdf": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-typed": "^1.2.0"
+    "react-typed": "^1.2.0",
+    "react-vertical-timeline-component": "^3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",

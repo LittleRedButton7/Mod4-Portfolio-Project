@@ -35,7 +35,7 @@ body{
     margin-bottom:2.5rem;
     background-color: white;
     border-radius: .625rem;
-    border: solid .3rem var(--primary-yellow);
+    border: solid .3rem rgb(218, 218, 3);
     padding: 1rem 1rem 1rem 1rem;
     box-shadow:.625rem .625rem .3125rem rgb(148, 147, 147);
 }
@@ -87,9 +87,10 @@ body{
     margin-top: 2rem;
     border-radius: .625rem;
     box-shadow: 0.625rem 0.625rem 0.3125rem rgb(117, 117, 117);
+    border: solid .07rem rgb(85, 85, 85);
 }
 
-/********PORTFOLIO PAGE*/
+/********PORTFOLIO PAGE*******/
 .project-info-wrapper{
     /* margin-top: 10rem;
     height: 100vh; */
@@ -109,7 +110,7 @@ body{
     margin-bottom: 2.5rem;
     background-color: white;
     border-radius: .625rem;
-    border: solid .3rem var(--primary-turquoise);
+    border: solid .3rem rgb(48, 173, 161);
     padding: 1rem 1rem 1rem 1rem;
     box-shadow:.625rem .625rem .3125rem rgb(148, 147, 147);
 }
@@ -145,5 +146,89 @@ body{
     width: 30rem;
     height: auto;
     padding-bottom: 2rem;
+    /* border-color: black;
+    border: 1rem; */
 }
     
+/********ARTWORK PAGE******/
+.cake-timeline-div > h2 {
+    color: black;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+    font-family: "Clicker Script";
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.cake-timeline-div > p {
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+    font-family: "Clicker Script";
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.cake-icon{
+    background-color: turquoise;
+    font-size: 2rem;
+}
+
+.icon{
+    width: 3rem;
+    height: auto;
+    font-weight: 600;
+}
+
+.timeline-pic{
+    width: 15rem;
+    height: auto;
+}
+
+.timeline-card{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.vertical-timeline-element-content{
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+.other-art-div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+    margin-right:15rem;
+    margin-left: 15rem;
+}
+
+.artpiece{
+    text-align: center;
+    width: 28rem;
+    height: 37rem;
+    background-color: darkgray;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+    border-radius: .625rem;
+}
+
+.artpiece > img {
+    width: 20rem;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: .625rem;
+    box-shadow:.625rem .625rem .3125rem rgb(148, 147, 147);
+}
