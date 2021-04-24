@@ -9,9 +9,10 @@
 
 body{
     /* background-color: lightgray; */
-    background-image: url("../Components/Images/sparkleBackground.jpg");
+    /* background-image: url("../Components/Images/sparkleBackground.jpg"); */
     background-size: cover;
     background-position: center;
+    /* background-color: whitesmoke; */
     /* height: auto; */
 }
 
@@ -215,7 +216,7 @@ body{
     text-align: center;
     width: 28rem;
     height: 37rem;
-    background-color: darkgray;
+    background-color: rgb(31, 30, 30);
     margin-top: 2rem;
     margin-bottom: 2rem;
     overflow: auto;
