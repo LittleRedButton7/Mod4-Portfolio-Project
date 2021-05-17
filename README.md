@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# Marissa Nolan Portfolio
+This was my Mod4 project for Flatiron School. I made a personal portfolio website.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of Contents
+* [General Info](#General-Info)
+* [Technologies](#Technologies)
+* [Setup](#Setup)
+* [Code Examples](#Code-Examples)
+* [Features](#Features)
+* [Status](#Status)
+* [Contact](#Contact)
 
-In the project directory, you can run:
+## General Info
+I created a personal portfolio site to showcase some of the projects and technologies I have learned. I also included information to share a bit about my background as well as my resume.
+<!-- ## Intro Video
+[Fly Away! on YouTube](https://youtu.be/P52TS0hV62s) -->
 
-### `yarn start`
+## Technologies
+* React
+* HTML
+* CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Setup
+* Fork and clone this repo into your local branch.
+* Open it and run this frontend with npm start.
+* Open in VS code or other text editor if you'd like to see the code.
+* From there, explore the site and if you'd like to connect, please feel free to reach out or fill in the form on the contact page.
 
-### `yarn test`
+## Code Examples
+React
+```
+import React, { useEffect, useState, useRef } from 'react'
+import { SliderData } from "./SliderData";
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const ImageSlider = ({slides}) => {
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
+    const timeout = useRef(null);
 
-### `yarn build`
+    useEffect(
+        () => {
+        const nextSlide = () => {
+            setCurrent(current => (current === length -1 ? 0 : current + 1));
+        };
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+        timeout.current = setTimeout(nextSlide, 4000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        return function() {
+            if(timeout.current) {
+                clearTimeout(timeout.current);
+            }
+        };
+    }, [current, length]
+    );
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    const nextSlide = () => {
+        setCurrent(current === length -1 ? 0 : current + 1);
+    }
 
-### `yarn eject`
+    const previousSlide = () => {
+        setCurrent(current === 0 ? length -1 : current -1);
+    }
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    if(!Array.isArray(slides) || slides.length <= 0) {
+        return null;
+    }
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    return (
+        <section className="slider">
+            <FaArrowAltCircleLeft className="left-arrow" onClick={previousSlide} />
+            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+            {SliderData.map((slide, index) => {
+                return (
+                    <div className={index === current ? "slide active" : "slide"} key=
+                    {index}>
+                        {index === current && (
+                            <img src={slide.image} alt="cake picture" className="image"/>
+                        )}
+                    </div>
+                )
+            })}
+        </section>
+    )
+}
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+export default ImageSlider
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CSS
+```
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:root {
+  --primary-pink: #ff00bf;
+  --primary-turquoise: #00fffd;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-yellow: #ffff00; 
+}
+/*************NAVBAR***************/
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+.navbar-brand{
+  position: relative;
+  left: -18rem;
+}
 
-### Analyzing the Bundle Size
+.logo{
+  width: 30rem;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 5rem;
+    left: 0;
+  }
+  .logo{
+    width: 16rem;
+    height: 7rem;
+  }
+}
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
+## Features
+* Explore the various portfolio pages.
+* If you'd like to connect, please feel free to reach out on LinkedIn or fill in the contact form!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Status
+This is a functioning portfolio app. I'm sure as I continue to code and develop new projects, I will be updating the content. Also, at the moment, it is only a repository. Once I get it to a good place, I'd like to deploy it live for easier access.
 
-### Deployment
+## Contact
+Feel free to reach out and connect with me!
+[Marissa Nolan](https://www.linkedin.com/in/marissanolan1/) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Thanks for visiting!
