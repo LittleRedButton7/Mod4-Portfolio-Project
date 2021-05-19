@@ -233,3 +233,24 @@ body{
     border-radius: .625rem;
     box-shadow:.625rem .625rem .3125rem rgb(148, 147, 147);
 }
+
+/********CONTACT PAGE***********/
+.contact-page-div{
+    text-align: center;
+}
+
+.contact-title{
+    margin-top: 2rem;
+    font-size: 5rem;
+}
+
+.btn-info {
+    margin-bottom: 7rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: .7rem;
+}
+
+.form-group{
+    width: 20rem;
+}
