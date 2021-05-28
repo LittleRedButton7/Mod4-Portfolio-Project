@@ -348,28 +348,41 @@ hr{
 }
 
 .main-footer{
-  /* position: fixed; */
   display: flex;
   justify-content: center;
   color: white;
   background-color: rgb(73, 73, 73);
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
   bottom: 0;
   width: 100%;
   z-index: 10;
+
 }
 
-/* .footer-container{
+.footer-container{
   justify-content: center;
-} */
+  text-align: center;
+}
 
 .content-wrap{
-  flex:1;
+  flex: 1;
 }
 
-.column{
-  padding-top: 0;
+.column1{
+  padding-top: 1rem;
+  z-index: 10;
   padding-left: 2rem;
+  padding-right: 1rem;
+}
+.column2{
+  height: 3rem;
+  width: 10rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+.column3{
+  padding-top: 1rem;
+  padding-left: 1rem;
   padding-right: 2rem;
 }
 
