@@ -1,20 +1,40 @@
 import React from 'react'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { falinkedin } from '@fortawesome/free-solid-svg-icons';
+// import { NavLink } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
+
+// import {SocialIcon} from 'react-social-media-icons';
+// import LinkedInLogo from "../Components/Images/LinkedInLogo.png"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {  } from '@fortawesome/free-solid-svg-icons';
+// import "../Components/FontawesomeIcons";
 
 const Footer = () => {
+    // const GitHubIcon = [{url:"", className: 'fa-github-square'}]
+
     return (
         <div className="main-footer">
             <div className="footer-container">
                 <div className="row">
-                    <div className="column">
-                        <h4>LinkedIn</h4>
+                    <div className="column1">
+                        <SocialIcon 
+                            url="https://www.linkedin.com/in/marissanolan1/" 
+                            className="mr-4" 
+                            target="_blank" 
+                            fgColor="#fff" 
+                            style={{ height: 35, width:35 }} 
+                        />
                     </div>
-                    <div className="column">
+                    <div className="column2">
                         <h4>Denver, CO</h4>
                     </div>
-                    <div className="column">
-                        <h4>GitHub Link Here</h4>
+                    <div className="column3">
+                        <SocialIcon 
+                            url="https://github.com/LittleRedButton7" 
+                            className="mr-4" 
+                            target="_blank" 
+                            fgColor="#fff" 
+                            style={{ height: 35, width:35 }} 
+                        />
                     </div>
                 </div>
                 <hr />

@@ -9,12 +9,12 @@ export const allTechCardInfo = [
         id: "2",
         techName:  "Backend", 
         techImage: "BackendSymbol.JPG",
-        techSkills: ["Ruby", "Ruby on Rails", "SQL"]
+        techSkills: ["Ruby", "Ruby on Rails","Django", "SQL"]
     },
     { 
         id: "3",
         techName:  "Design",
         techImage: "DesignSymbol.JPG", 
-        techSkills: ["Miro"] 
+        techSkills: ["Miro", "Pencil Project"] 
     }
 ];
