@@ -43,7 +43,7 @@ export default function Artwork() {
                     
                 })}
             </VerticalTimeline>
-            <h2>Other Artwork</h2>
+            {/* <h2>Other Artwork</h2>
             <div className="other-art-div">
             {
                 allArt.map((artwork) => {
@@ -52,7 +52,7 @@ export default function Artwork() {
                     </div>
                 })
             }
-        </div>
+        </div> */}
         </div>
     )
 }

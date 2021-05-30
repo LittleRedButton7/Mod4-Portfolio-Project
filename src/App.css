@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
   --primary-pink: #ff00bf;
@@ -130,7 +131,7 @@ nav a.nav-link{
 .button-main-offering{
   font-family: "Clicker Script";
   border: 1px solid var(--primary-yellow);
-  border-radius: 0;
+  border-radius: .5rem;
   padding: 0.625rem 0.75rem .75rem 0.75rem;
   color: var(--primary-turquoise);
   background-color: rgb(148, 147, 147);
@@ -240,7 +241,7 @@ nav a.nav-link{
 
 .portfolio-highlights > p{
   color: var(--primary-pink);
-  font-family: "Clicker Script";
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.0375rem;
@@ -270,9 +271,9 @@ nav a.nav-link{
   margin-bottom: 5rem;
   padding-right: 10rem;
   padding-left: 10rem;
-  color: var(--primary-pink);
-  font-family: "Clicker Script";
-  font-size: 2.5rem;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.0375rem;
   text-align: center;
