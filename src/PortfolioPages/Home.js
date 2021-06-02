@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from 'react-typed';
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ImageSlider from "../Components/ImageSlider";
 import { SliderData } from "../Components/SliderData";
 import TechCards from "../Components/TechCardTemplate";
