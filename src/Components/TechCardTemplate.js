@@ -16,7 +16,7 @@ export default function TechCards() {
             {
                 allTechCardInfo.map((techCard) => {
                     return <Link to="/portfolio"><div className="tech-card" key={techCard.id} >
-                        <img src={techCard.techImage} alt="tech-image" />
+                        <img src={techCard.techImage} alt="tech-clipart" />
                         <h1>{techCard.techName}</h1>
                         <ul>
                             {mapSkills(techCard)}

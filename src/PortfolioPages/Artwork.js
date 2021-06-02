@@ -1,6 +1,6 @@
 import React from 'react'
 import "./PageStyle.css"
-import { allArt } from "../Components/OtherArtwork";
+// import { allArt } from "../Components/OtherArtwork";
 import { cakeTimelineElements } from "../Components/CakeTimelineElements";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
@@ -34,7 +34,7 @@ export default function Artwork() {
                                 // iconStyle={{color: "#00fffd"}}
                                 >
                                 
-                                <img src={element.image} className="timeline-pic"/>
+                                <img src={element.image} className="timeline-pic" alt="cakepic"/>
                                 <h3 titleClassName="cake-title">{element.title} </h3>
                                 <p id="cake-description">{element.description}</p>
                 
