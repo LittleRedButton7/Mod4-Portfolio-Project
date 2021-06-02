@@ -141,6 +141,7 @@ nav a.nav-link{
 
 .button-main-offering:hover{
   color: var(--primary-yellow);
+  border: 1px solid var(--primary-yellow);
   text-decoration: none;
   background-color: darkgray;
   transition: .2s ease-in-out;
@@ -151,6 +152,7 @@ nav a.nav-link{
   justify-content: center;
   padding-bottom: 5rem;
 }
+
 
 /*************SLIDER CSS***************/
 .image-slider{

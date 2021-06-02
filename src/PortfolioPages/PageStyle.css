@@ -259,10 +259,26 @@ body{
 }
 
 .btn-info {
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem;
     height: 3rem;
     width: 8rem;
-    border-radius: .7rem;
+    border-radius: .7rem; */
+    font-family: "Clicker Script";
+    border: 1px solid var(--primary-yellow);
+    border-radius: .5rem;
+    padding: 0.625rem 0.75rem .75rem 0.75rem;
+    color: var(--primary-turquoise);
+    background-color: rgb(148, 147, 147);
+    font-size: 2rem;
+    font-weight: 350;
+    margin-bottom: 2rem;
+}
+
+.btn-info:hover{
+    color: var(--primary-yellow);
+    text-decoration: none;
+    background-color: darkgray;
+    transition: .2s ease-in-out;
 }
 
 .form-group{
