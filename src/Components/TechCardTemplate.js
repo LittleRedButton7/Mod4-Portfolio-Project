@@ -12,17 +12,18 @@ export default function TechCards() {
 
 
     return (
-        <div className="tech-info-wrapper">
+        <div className="tech-info-wrapper" >
             {
                 allTechCardInfo.map((techCard) => {
-                    return <Link to="/portfolio"><div className="tech-card" key={techCard.id} >
+                    return <div className="tech-card" key={techCard.techName} >
+                        <Link to="/portfolio">
                         <img src={techCard.techImage} alt="tech-clipart" />
                         <h1>{techCard.techName}</h1>
                         <ul>
                             {mapSkills(techCard)}
                         </ul>
-                    </div>
                     </Link>
+                    </div>
                 })
             }
         </div>
