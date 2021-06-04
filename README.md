@@ -4,6 +4,7 @@ This was my Mod4 project for Flatiron School. I made a personal portfolio websit
 
 ## Table of Contents
 * [General Info](#General-Info)
+* [Demo](#Demo)
 * [Technologies](#Technologies)
 * [Setup](#Setup)
 * [Code Examples](#Code-Examples)
@@ -13,8 +14,9 @@ This was my Mod4 project for Flatiron School. I made a personal portfolio websit
 
 ## General Info
 I created a personal portfolio site to showcase some of the projects and technologies I have learned. I also included information to share a bit about my background as well as my resume.
-<!-- ## Intro Video
-[Fly Away! on YouTube](https://youtu.be/P52TS0hV62s) -->
+
+## Demo
+[Marissa Nolan Portfolio Site](https://www.loom.com/share/8dc078e6b6574111ba073bd4e9cc24f1)
 
 ## Technologies
 * React
